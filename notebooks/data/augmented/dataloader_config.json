@@ -1,0 +1,37 @@
+{
+  "batch_size": 64,
+  "num_workers": 0,
+  "pin_memory": true,
+  "prefetch_factor": 2,
+  "n_train_samples": 13950,
+  "n_val_samples": 344,
+  "n_test_samples": 232,
+  "steps_per_epoch": 217,
+  "window_size": 8,
+  "n_features": 27,
+  "n_horizons": 5,
+  "horizons_h": [
+    6,
+    12,
+    24,
+    48,
+    72
+  ],
+  "aug_methods": [
+    "jitter",
+    "magnitude_scale",
+    "time_warp",
+    "mixup"
+  ],
+  "aug_factor": 5,
+  "device": "cuda",
+  "class_weights": {
+    "TD": 1.1697595712374702,
+    "TS": 0.18799707394887916,
+    "C1": 0.29936974808921035,
+    "C2": 0.5656747777327469,
+    "C3": 0.644561396396157,
+    "C4": 0.6233587188831256,
+    "C5": 3.509278713712411
+  }
+}

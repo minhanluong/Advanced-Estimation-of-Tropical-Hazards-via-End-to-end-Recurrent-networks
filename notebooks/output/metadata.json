@@ -1,0 +1,64 @@
+{
+  "n_rows": 9653,
+  "n_storms": 388,
+  "year_range": [
+    1996,
+    2023
+  ],
+  "step_hours": 6,
+  "input_features": [
+    "lat",
+    "lon",
+    "delta_lat",
+    "delta_lon",
+    "speed_kmh",
+    "bearing_sin",
+    "bearing_cos",
+    "delta_lat_12h",
+    "delta_lon_12h",
+    "speed_mean_24h",
+    "wind_kt",
+    "pressure_mb",
+    "delta_wind_kt",
+    "delta_pres_mb",
+    "wind_trend_12h",
+    "wind_trend_24h",
+    "pres_trend_12h",
+    "pres_trend_24h",
+    "is_RI",
+    "month_sin",
+    "month_cos",
+    "hour_sin",
+    "hour_cos",
+    "storm_age_h",
+    "is_peak_season",
+    "noaa_damage_B",
+    "noaa_deaths"
+  ],
+  "target_track": [
+    "delta_lat",
+    "delta_lon"
+  ],
+  "target_intensity": [
+    "wind_kt",
+    "pressure_mb"
+  ],
+  "target_class": [
+    "intensity_class"
+  ],
+  "horizons_h": [
+    6,
+    12,
+    24,
+    48,
+    72
+  ],
+  "horizons_steps": [
+    1,
+    2,
+    4,
+    8,
+    12
+  ],
+  "model_recommendation": "Bi-LSTM + Transformer Encoder (Hybrid)"
+}

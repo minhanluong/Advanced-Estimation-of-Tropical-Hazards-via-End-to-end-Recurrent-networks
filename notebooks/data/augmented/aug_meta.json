@@ -1,0 +1,17 @@
+{
+  "n_original": 2790,
+  "n_augmented": 13950,
+  "aug_factor": 5,
+  "methods": [
+    "original",
+    "jitter",
+    "magnitude_scale",
+    "time_warp",
+    "mixup"
+  ],
+  "X_shape": [
+    13950,
+    8,
+    27
+  ]
+}

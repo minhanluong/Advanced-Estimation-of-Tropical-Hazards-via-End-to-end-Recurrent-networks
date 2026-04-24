@@ -1,0 +1,8 @@
+.venv/
+venv/
+__pycache__/
+.ipynb_checkpoints/
+data/        # Nếu bạn để dataset trong thư mục 'data'
+*.zip
+*.pt         # File weight của mô hình (thường rất nặng)
+*.h5
